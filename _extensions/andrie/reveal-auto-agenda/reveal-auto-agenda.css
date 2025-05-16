@@ -1,0 +1,46 @@
+/* Done display slide header on auto-agenda slides */
+.agenda-slide h1 {
+  size: 0em;
+  display: none;
+}
+
+/* The agenda heading, if specified */
+.agenda-heading {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+/* The container class for auto-agenda */
+.agenda {
+  color: #282934;
+}
+
+.agenda-active {
+  color: #615BFF;
+  font-weight: bold;
+}
+
+.agenda-inactive {
+  opacity: 0.7;
+}
+
+.agenda-pre-active {
+  color: #86DF9E;
+  text-decoration: line-through;
+}
+
+.agenda-post-active {
+  color: #86DF9E;
+}
+
+.violet {
+  color: #615BFF !important;
+}
+
+.violet-reverse {
+  color: white !important;
+  background-color: #615BFF !important;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+}

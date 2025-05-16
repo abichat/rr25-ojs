@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Roobert';
+  src: url('../../../../../src/Roobert-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roobert';
+  src: url('../../../../../src/Roobert-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/*-- scss:defaults --*/
+
+$spotlight-green: #86DF9E;
+$spotlight-purple: #615BFF;
+$spotlight-black: #18181B;
+$spotlight-anthracite: #282934;
+
+$body-color: $spotlight-anthracite !default;
+$link-color: $spotlight-purple;
+$code-color: $spotlight-purple;
+$presentation-heading-color: $spotlight-purple !default;
+
+$font-family-sans-serif: 'Roobert', serif !default;
+$presentation-heading-font: 'Roobert' !default;
+
+$presentation-font-size-root: 35px;
+$presentation-h1-font-size: 2.8em;
+$code-block-font-size: 0.6em;
+
+/*-- scss:rules --*/
+
+
+.anthracite {
+  color: $spotlight-anthracite !important;
+}
+
+.green {
+  color: $spotlight-green !important;
+}
+
+.purple {
+  color: $spotlight-purple !important;
+}
+
+.green-reverse {
+  color: white !important;
+  background-color: $spotlight-green !important;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+}
+
+.purple-reverse {
+  color: white !important;
+  background-color: $spotlight-purple !important;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+}
+
+
+.background-black {
+  background-color: $spotlight-black !important;
+}
+
+.reveal .slide-logo {
+  z-index: -999 !important;
+}
+
+
+.icon-fw   { 
+  display:inline-block; 
+  width:1.5em; 
+  text-align:center; 
+}
+
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-content-v {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}
+
+
+.title-big-white {
+  font-size: 70px !important;
+  color: white;
+  margin: 0 0 20px 0;
+}
+
+.subtitle-green {
+  font-size: 1em;
+  color: $spotlight-green; 
+  margin: 0;
+}
+
+
+.circular-square {
+  border-radius: 50%;
+}
+
+.image-tl {
+  position: absolute;
+  top: 0px;    
+  left: 0px;   
+  height: auto;
+  z-index: 10;  
+}
+
+.image-br {
+  position: absolute;
+  bottom: 10px;    
+  right: 10px;   
+  height: auto;
+  z-index: 10;  
+}

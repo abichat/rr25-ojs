@@ -1,0 +1,582 @@
+---
+format: 
+  revealjs:
+    footer: "Rencontres R 2025 – Mons"
+    slide-number: c
+    width: 1280
+    height: 720
+    theme: src/spotlight.scss
+    logo: src/logo-squarred-icone-white.jpg
+    include-after-body: src/clean_title_page.html
+    scrollable: true
+    code-line-numbers: false
+filters:
+  - reveal-auto-agenda
+execute: 
+  echo: true
+  warning: false
+---
+
+## {.background-black}
+
+<div class="image-tl">
+  <img src="src/logo-rectangle-center-black.png" width="400">
+</div>
+
+<div class="centered-block">
+  <div class="title-big-white">
+  **Dynamisez vos documents [Quarto]{.green} grâce à [Observable JS]{.purple-reverse}**
+  </div>
+  <div class="subtitle-green">
+  Antoine Bichat – Spotlight Medical
+  </div>
+  <div class="subtitle-green">
+  Rencontres R 2025 – Mons
+  </div>
+</div>
+
+<div class="image-br">
+  <img src="src/hex-rr25.png" width="150">
+</div>
+
+# Introduction
+
+
+## Présentation
+
+
+:::: {.columns}
+::: {.column width="50%"}
+
+<div class="center-content-v">
+<br>
+<img class="circular-square" src="src/ab.jpg" width="230"/>
+</div>
+
+<div class="center-content">
+  <a href="https://abichat.github.io/yatah/"><img src="src/hex-yatah.png" height="150"></a>
+  <a href="https://abichat.github.io/scimo/"><img src="src/hex-scimo.png" height="150"></a>
+</div>
+
+<div class="center-content">
+  [[{{< fa brands github >}} \@abichat]{.anthracite}](https://github.com/abichat)
+</div>
+:::
+
+
+::: {.column width="50%"}
+<div class="center-content-v">
+<img src="src/logo-rectangle-center-white.png" height="250"/>
+<img src="src/lesechos.png"/>
+</div>
+:::
+
+::::
+
+
+## Observable JS
+
+
+:::: columns
+::: {.column width="60%"}
+
+* Dialecte de JavaScript
+
+* Créé par
+
+  * Mike Bostock (co-créateur de D3)
+  
+  * Melody Meckfessel (VP Google)
+
+* Pensé pour la visualisation de données
+
+* Interactif et réactif
+
+* Intégré nativement dans Quarto
+
+:::
+
+::: {.column width="40%"}
+
+<br>
+
+<div class="center-content">
+  <img src="src/logo-observable.png" height="200">
+</div>
+
+:::
+::::
+
+
+## Objectifs
+
+
+* Premiers graphes avec Observable JS
+
+* Gadgets et réactivité
+
+* Cas concret : nuage de points interactif et réactif
+
+  * info-bulles
+
+  * choix des axes
+  
+  * filtre des points à afficher
+
+
+## Les manchots de Palmer
+
+:::: {.columns}
+
+::: {.column width="72%"}
+
+```{r}
+head(penguins)
+```
+
+:::
+
+
+::: {.column width="28%"}
+
+
+![Crédit : Allison Horst](src/penguins.png)
+
+:::
+
+::::
+
+<br>
+
+Depuis `R 4.5.0`, le jeu de données des manchots de Palmer est désormais disponible nativement, sans avoir à charger `{palmerpenguins}`.
+
+```{r}
+#| echo: false
+ojs_define(t_penguins = penguins)
+```
+
+```{ojs}
+//| echo: false
+penguins = transpose(t_penguins)
+```
+
+
+
+# Une grammaire des graphiques
+
+## Nuage de points
+
+
+:::: columns
+::: {.column width="50%"}
+```{ojs}
+//| label: scatter
+//| echo: true
+//| eval: false
+Plot.plot({
+  marks: [
+    Plot.dot(penguins, {
+      x: "bill_len",
+      y: "bill_dep",
+      fill: "species"
+    })
+  ]
+})
+```
+:::
+
+::: {.column width="50%"}
+```{ojs}
+//| ref.label: scatter
+//| echo: false
+//| eval: true
+```
+:::
+::::
+
+
+## Formes, couleurs et légendes
+
+::::: columns
+::: {.column width="50%"}
+```{ojs}
+//| label: col-lab
+//| echo: true
+//| eval: false
+Plot.plot({
+  marks: [
+    Plot.dot(penguins, {
+      x: "bill_len",
+      y: "bill_dep",
+      fill: "species",
+      symbol: "island"
+    })
+  ],
+  color: {
+    legend: true,
+    scheme: "viridis"
+  },
+  symbol: {legend: true},
+  x: {label: "Longueur du bec (mm)"},
+  y: {label: "Épaisseur du bec (mm)"},
+  caption: "Manchots de Palmer"
+})
+```
+:::
+
+::: {.column width="50%"}
+```{ojs}
+//| ref.label: col-lab
+//| echo: false
+//| eval: true
+```
+:::
+:::::
+
+## Info-bulles
+
+::::: columns
+::: {.column width="50%"}
+```{ojs}
+//| label: tooltip
+//| echo: true
+//| eval: false
+Plot.plot({
+  marks: [
+    Plot.dot(penguins, {
+      x: "bill_len",
+      y: "bill_dep",
+      fill: "species",
+      symbol: "island",
+      tip: true,
+      channels: {sex: "sex"}
+    })
+  ],
+  color: {
+    legend: true,
+    scheme: "viridis"
+  },
+  symbol: {legend: true},
+  x: {label: "Longueur du bec (mm)"},
+  y: {label: "Épaisseur du bec (mm)"},
+  caption: "Manchots de Palmer"
+})
+```
+:::
+
+::: {.column width="50%"}
+```{ojs}
+//| ref.label: tooltip
+//| echo: false
+//| eval: true
+```
+:::
+:::::
+
+## Histogrammes et déclinaison par groupe
+
+::::: columns
+::: {.column width="50%"}
+```{ojs}
+//| label: histogram
+//| echo: true
+//| eval: false
+Plot.plot({
+  marks: [
+    Plot.rectY(
+      penguins,
+      Plot.binX(
+        {y: "count"}, 
+        {x: "bill_len", fill: "species"}
+      )
+    )
+  ],
+  facet: {
+    data: penguins,
+    y: "island",
+    marginRight: 75
+  },
+  color: {
+    legend: true,
+    scheme: "category10"
+  }
+})
+```
+:::
+
+::: {.column width="50%"}
+```{ojs}
+//| ref.label: histogram
+//| echo: false
+//| eval: true
+```
+:::
+:::::
+
+
+# Communication de R à OJS
+
+
+## Transfert des données
+
+La fonction `ojs_define` met à disposition la données de R dans les cellules OJS
+
+
+```{r}
+#| echo: false
+cat("```{r}\nojs_define(t_penguins = penguins)\n```")
+```
+
+. . .
+
+Les jeux de données doivent être transposés avant d'être utilisés dans les tâches de visualisation
+
+```{r}
+#| echo: false
+cat("```{ojs}\npenguins = transpose(t_penguins)\n```")
+```
+
+. . . 
+
+```{ojs}
+penguins
+```
+
+
+
+# Gadgets
+
+## Boutons radio et filtre d'égalité
+
+
+```{ojs}
+viewof choice_sp = Inputs.radio(
+  ["Adelie", "Chinstrap", "Gentoo"], 
+  {value: "Adelie", label: html`<b>Species</b>`}
+)
+```
+
+
+```{ojs}
+choice_sp
+```
+
+. . .
+
+<br>
+
+```{ojs}
+penguins.filter((peng) => peng.species === choice_sp)
+```
+
+
+## Cases à cocher et filtre d'appartenance
+
+```{ojs}
+viewof choice_sp2 = Inputs.checkbox(
+  ["Adelie", "Chinstrap", "Gentoo"], 
+  {value: ["Adelie"], label: html`<b>Species</b>`}
+)
+```
+
+
+```{ojs}
+choice_sp2
+```
+
+. . .
+
+<br>
+
+```{ojs}
+penguins.filter((peng) => choice_sp2.includes(peng.species))
+```
+
+# Cas concret
+
+## Les gadgets
+
+```{ojs}
+//| label: choice-var-x
+//| echo: true
+//| eval: false
+viewof choice_var_x = Inputs.radio(
+  ["bill_len", "bill_dep", "flipper_len", "body_mass"], 
+  {value: "bill_len", label: html`<b>X</b>`}
+)
+```
+
+. . .
+
+<br>
+
+```{ojs}
+//| label: choice-var-y
+//| echo: true
+//| eval: false
+viewof choice_var_y = Inputs.radio(
+  ["bill_len", "bill_dep", "flipper_len", "body_mass"], 
+  {value: "bill_dep", label: html`<b>Y</b>`}
+)
+```
+
+. . .
+
+<br>
+
+```{ojs}
+//| label: choice-island
+//| echo: true
+//| eval: false
+viewof choice_isl = Inputs.checkbox(
+  ["Biscoe", "Dream", "Torgersen"], 
+  {value: ["Biscoe", "Dream", "Torgersen"], label: html`<b>Island</b>`}
+)
+```
+
+
+## Le graphe
+
+
+```{ojs}
+penguins_flt = penguins.filter((peng) => choice_isl.includes(peng.island))
+```
+
+. . .
+
+<br>
+
+```{ojs}
+//| label: boxplot
+//| echo: true
+//| eval: false
+Plot.plot({
+  marks: [
+    Plot.dot(penguins_flt, {
+      x: choice_var_x,
+      y: choice_var_y,
+      fill: "species",
+      symbol: "island",
+      tip: true
+    })
+  ],
+  color: {
+    legend: true
+  },
+  symbol: {
+    legend: true
+  }
+})
+```
+
+## Interactif et réactif
+
+::::: columns
+::: {.column width="50%"}
+
+```{ojs}
+//| ref.label: choice-var-x
+//| echo: false
+//| eval: true
+```
+
+<br>
+
+```{ojs}
+//| ref.label: choice-var-y
+//| echo: false
+//| eval: true
+```
+
+<br>
+
+```{ojs}
+//| ref.label: choice-island
+//| echo: false
+//| eval: true
+```
+:::
+
+::: {.column width="50%"}
+```{ojs}
+//| ref.label: boxplot
+//| echo: false
+//| eval: true
+```
+:::
+:::::
+
+# Conclusion
+
+## Avantages et inconvénients
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+**Avantages**
+
+* Interactivité (info-bulles...)
+
+* Réactivité (filtres...)
+
+* Pas besoin de `{shiny}`
+
+* Intégré dans Quarto
+
+* Transfert fluide des données grâce à `ojs_define`
+
+* Grammaire des graphiques
+
+
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+**Inconvénients**
+
+* Nouvelle syntaxe 
+
+* Pas de conversion automatique (comme `{ggiraph}`)
+
+* Pas aussi complet que `{ggplot2}` (pas de `geom_smooth`...)
+
+* Besoin de `$npx serve` ou `servr::httd` en local
+
+:::
+
+::::
+
+
+## Pour aller plus loin
+
+<br>
+
+[{{< fa book >}}]{.icon-fw} Documentation officielle : <https://observablehq.com/plot/getting-started>
+
+[{{< fa brands youtube >}}]{.icon-fw} Tutoriel à R in Pharma : <https://www.youtube.com/watch?v=M6fP68XnacM>
+
+[{{< fa file-text >}}]{.icon-fw} Article de blog : <https://nrennie.rbind.io/blog/observable-r-users>
+
+[{{< fa eye >}}]{.icon-fw} Galerie d'exemples : <https://abichat.github.io/ojs-gallery>
+
+
+## {.background-black}
+
+<div class="image-tl">
+  <img src="src/logo-rectangle-center-black.png" width="400">
+</div>
+
+<div class="centered-block">
+  <div class="title-big-white">
+  **Merci !**
+  </div>
+  <div class="subtitle-green">
+  [[spotlightmedical.com]{.green}](https://spotlightmedical.com/)
+  </div>
+</div>
+

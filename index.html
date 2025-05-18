@@ -6,11 +6,11 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="index_files/libs/quarto-contrib/reveal-auto-agenda-0.0.3/reveal-auto-agenda.css" rel="stylesheet">
 <link href="index_files/libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="index_files/libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.29">
+  <meta name="generator" content="quarto-1.7.31">
 
   <title>index</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -328,7 +328,7 @@ Rencontres R 2025 – Mons
 <p><br></p>
 <p>Depuis <code>R 4.5.0</code>, le jeu de données des manchots de Palmer est désormais disponible nativement, sans avoir à charger <code>{palmerpenguins}</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="159" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 158;"><span id="cb3-159"><a href="" aria-hidden="true" tabindex="-1"></a>penguins <span class="op">=</span> <span class="fu">transpose</span>(t_penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="161" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 160;"><span id="cb3-161"><a href="" aria-hidden="true" tabindex="-1"></a>penguins <span class="op">=</span> <span class="fu">transpose</span>(t_penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="declaration">
 
@@ -367,15 +367,15 @@ Rencontres R 2025 – Mons
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell" data-eval="false">
-<div class="sourceCode cell-code" id="cb4" data-startfrom="175" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 174;"><span id="cb4-175"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb4-176"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb4-177"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins<span class="op">,</span> {</span>
-<span id="cb4-178"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span></span>
-<span id="cb4-179"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span></span>
-<span id="cb4-180"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span></span>
-<span id="cb4-181"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb4-182"><a href="" aria-hidden="true" tabindex="-1"></a>  ]</span>
-<span id="cb4-183"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4" data-startfrom="177" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 176;"><span id="cb4-177"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb4-178"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb4-179"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins<span class="op">,</span> {</span>
+<span id="cb4-180"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span></span>
+<span id="cb4-181"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span></span>
+<span id="cb4-182"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span></span>
+<span id="cb4-183"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb4-184"><a href="" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb4-185"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="scatter" class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="expression">
 
@@ -384,15 +384,15 @@ Rencontres R 2025 – Mons
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell" data-ref.label="scatter" data-eval="true">
-<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="192" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 191;"><span id="cb5-192"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb5-193"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb5-194"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins<span class="op">,</span> {</span>
-<span id="cb5-195"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span></span>
-<span id="cb5-196"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span></span>
-<span id="cb5-197"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span></span>
-<span id="cb5-198"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb5-199"><a href="" aria-hidden="true" tabindex="-1"></a>  ]</span>
-<span id="cb5-200"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="194" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 193;"><span id="cb5-194"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb5-195"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb5-196"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins<span class="op">,</span> {</span>
+<span id="cb5-197"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span></span>
+<span id="cb5-198"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span></span>
+<span id="cb5-199"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span></span>
+<span id="cb5-200"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb5-201"><a href="" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb5-202"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-3" data-nodetype="expression">
 
@@ -406,24 +406,24 @@ Rencontres R 2025 – Mons
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell" data-eval="false">
-<div class="sourceCode cell-code" id="cb6" data-startfrom="205" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 204;"><span id="cb6-205"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb6-206"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb6-207"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins<span class="op">,</span> {</span>
-<span id="cb6-208"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span></span>
-<span id="cb6-209"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span></span>
-<span id="cb6-210"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
-<span id="cb6-211"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">symbol</span><span class="op">:</span> <span class="st">"island"</span></span>
-<span id="cb6-212"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb6-213"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
-<span id="cb6-214"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
-<span id="cb6-215"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb6-216"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">"viridis"</span></span>
-<span id="cb6-217"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb6-218"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">symbol</span><span class="op">:</span> {<span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
-<span id="cb6-219"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Longueur du bec (mm)"</span>}<span class="op">,</span></span>
-<span id="cb6-220"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Épaisseur du bec (mm)"</span>}<span class="op">,</span></span>
-<span id="cb6-221"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">caption</span><span class="op">:</span> <span class="st">"Manchots de Palmer"</span></span>
-<span id="cb6-222"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6" data-startfrom="207" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 206;"><span id="cb6-207"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb6-208"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb6-209"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins<span class="op">,</span> {</span>
+<span id="cb6-210"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span></span>
+<span id="cb6-211"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span></span>
+<span id="cb6-212"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
+<span id="cb6-213"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">symbol</span><span class="op">:</span> <span class="st">"island"</span></span>
+<span id="cb6-214"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb6-215"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb6-216"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
+<span id="cb6-217"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb6-218"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">"viridis"</span></span>
+<span id="cb6-219"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb6-220"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">symbol</span><span class="op">:</span> {<span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
+<span id="cb6-221"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Longueur du bec (mm)"</span>}<span class="op">,</span></span>
+<span id="cb6-222"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Épaisseur du bec (mm)"</span>}<span class="op">,</span></span>
+<span id="cb6-223"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">caption</span><span class="op">:</span> <span class="st">"Manchots de Palmer"</span></span>
+<span id="cb6-224"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="col-lab" class="cell-output cell-output-display">
 <div id="ojs-cell-4" data-nodetype="expression">
 
@@ -432,24 +432,24 @@ Rencontres R 2025 – Mons
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell" data-ref.label="col-lab" data-eval="true">
-<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="231" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 230;"><span id="cb7-231"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb7-232"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb7-233"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins<span class="op">,</span> {</span>
-<span id="cb7-234"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span></span>
-<span id="cb7-235"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span></span>
-<span id="cb7-236"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
-<span id="cb7-237"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">symbol</span><span class="op">:</span> <span class="st">"island"</span></span>
-<span id="cb7-238"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb7-239"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
-<span id="cb7-240"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
-<span id="cb7-241"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb7-242"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">"viridis"</span></span>
-<span id="cb7-243"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb7-244"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">symbol</span><span class="op">:</span> {<span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
-<span id="cb7-245"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Longueur du bec (mm)"</span>}<span class="op">,</span></span>
-<span id="cb7-246"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Épaisseur du bec (mm)"</span>}<span class="op">,</span></span>
-<span id="cb7-247"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">caption</span><span class="op">:</span> <span class="st">"Manchots de Palmer"</span></span>
-<span id="cb7-248"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="233" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 232;"><span id="cb7-233"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb7-234"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb7-235"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins<span class="op">,</span> {</span>
+<span id="cb7-236"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span></span>
+<span id="cb7-237"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span></span>
+<span id="cb7-238"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
+<span id="cb7-239"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">symbol</span><span class="op">:</span> <span class="st">"island"</span></span>
+<span id="cb7-240"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb7-241"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb7-242"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
+<span id="cb7-243"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb7-244"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">"viridis"</span></span>
+<span id="cb7-245"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb7-246"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">symbol</span><span class="op">:</span> {<span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
+<span id="cb7-247"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Longueur du bec (mm)"</span>}<span class="op">,</span></span>
+<span id="cb7-248"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Épaisseur du bec (mm)"</span>}<span class="op">,</span></span>
+<span id="cb7-249"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">caption</span><span class="op">:</span> <span class="st">"Manchots de Palmer"</span></span>
+<span id="cb7-250"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-5" data-nodetype="expression">
 
@@ -463,26 +463,26 @@ Rencontres R 2025 – Mons
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell" data-eval="false">
-<div class="sourceCode cell-code" id="cb8" data-startfrom="243" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 242;"><span id="cb8-243"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb8-244"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb8-245"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins<span class="op">,</span> {</span>
-<span id="cb8-246"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span></span>
-<span id="cb8-247"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span></span>
-<span id="cb8-248"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
-<span id="cb8-249"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">symbol</span><span class="op">:</span> <span class="st">"island"</span><span class="op">,</span></span>
-<span id="cb8-250"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb8-251"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">channels</span><span class="op">:</span> {<span class="dt">sex</span><span class="op">:</span> <span class="st">"sex"</span>}</span>
-<span id="cb8-252"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb8-253"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
-<span id="cb8-254"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
-<span id="cb8-255"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb8-256"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">"viridis"</span></span>
-<span id="cb8-257"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb8-258"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">symbol</span><span class="op">:</span> {<span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
-<span id="cb8-259"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Longueur du bec (mm)"</span>}<span class="op">,</span></span>
-<span id="cb8-260"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Épaisseur du bec (mm)"</span>}<span class="op">,</span></span>
-<span id="cb8-261"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">caption</span><span class="op">:</span> <span class="st">"Manchots de Palmer"</span></span>
-<span id="cb8-262"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8" data-startfrom="245" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 244;"><span id="cb8-245"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb8-246"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb8-247"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins<span class="op">,</span> {</span>
+<span id="cb8-248"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span></span>
+<span id="cb8-249"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span></span>
+<span id="cb8-250"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
+<span id="cb8-251"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">symbol</span><span class="op">:</span> <span class="st">"island"</span><span class="op">,</span></span>
+<span id="cb8-252"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb8-253"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">channels</span><span class="op">:</span> {<span class="dt">sex</span><span class="op">:</span> <span class="st">"sex"</span>}</span>
+<span id="cb8-254"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb8-255"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb8-256"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
+<span id="cb8-257"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb8-258"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">"viridis"</span></span>
+<span id="cb8-259"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb8-260"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">symbol</span><span class="op">:</span> {<span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
+<span id="cb8-261"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Longueur du bec (mm)"</span>}<span class="op">,</span></span>
+<span id="cb8-262"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Épaisseur du bec (mm)"</span>}<span class="op">,</span></span>
+<span id="cb8-263"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">caption</span><span class="op">:</span> <span class="st">"Manchots de Palmer"</span></span>
+<span id="cb8-264"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="tooltip" class="cell-output cell-output-display">
 <div id="ojs-cell-6" data-nodetype="expression">
 
@@ -491,26 +491,26 @@ Rencontres R 2025 – Mons
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell" data-ref.label="tooltip" data-eval="true">
-<div class="sourceCode cell-code hidden" id="cb9" data-startfrom="271" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 270;"><span id="cb9-271"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb9-272"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb9-273"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins<span class="op">,</span> {</span>
-<span id="cb9-274"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span></span>
-<span id="cb9-275"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span></span>
-<span id="cb9-276"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
-<span id="cb9-277"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">symbol</span><span class="op">:</span> <span class="st">"island"</span><span class="op">,</span></span>
-<span id="cb9-278"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb9-279"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">channels</span><span class="op">:</span> {<span class="dt">sex</span><span class="op">:</span> <span class="st">"sex"</span>}</span>
-<span id="cb9-280"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb9-281"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
-<span id="cb9-282"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
-<span id="cb9-283"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb9-284"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">"viridis"</span></span>
-<span id="cb9-285"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb9-286"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">symbol</span><span class="op">:</span> {<span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
-<span id="cb9-287"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Longueur du bec (mm)"</span>}<span class="op">,</span></span>
-<span id="cb9-288"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Épaisseur du bec (mm)"</span>}<span class="op">,</span></span>
-<span id="cb9-289"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">caption</span><span class="op">:</span> <span class="st">"Manchots de Palmer"</span></span>
-<span id="cb9-290"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb9" data-startfrom="273" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 272;"><span id="cb9-273"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb9-274"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb9-275"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins<span class="op">,</span> {</span>
+<span id="cb9-276"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span></span>
+<span id="cb9-277"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span></span>
+<span id="cb9-278"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
+<span id="cb9-279"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">symbol</span><span class="op">:</span> <span class="st">"island"</span><span class="op">,</span></span>
+<span id="cb9-280"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb9-281"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">channels</span><span class="op">:</span> {<span class="dt">sex</span><span class="op">:</span> <span class="st">"sex"</span>}</span>
+<span id="cb9-282"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb9-283"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb9-284"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
+<span id="cb9-285"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb9-286"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">"viridis"</span></span>
+<span id="cb9-287"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb9-288"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">symbol</span><span class="op">:</span> {<span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
+<span id="cb9-289"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Longueur du bec (mm)"</span>}<span class="op">,</span></span>
+<span id="cb9-290"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Épaisseur du bec (mm)"</span>}<span class="op">,</span></span>
+<span id="cb9-291"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">caption</span><span class="op">:</span> <span class="st">"Manchots de Palmer"</span></span>
+<span id="cb9-292"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-7" data-nodetype="expression">
 
@@ -524,26 +524,26 @@ Rencontres R 2025 – Mons
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell" data-eval="false">
-<div class="sourceCode cell-code" id="cb10" data-startfrom="283" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 282;"><span id="cb10-283"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb10-284"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb10-285"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">rectY</span>(</span>
-<span id="cb10-286"><a href="" aria-hidden="true" tabindex="-1"></a>      penguins<span class="op">,</span></span>
-<span id="cb10-287"><a href="" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">binX</span>(</span>
-<span id="cb10-288"><a href="" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">y</span><span class="op">:</span> <span class="st">"count"</span>}<span class="op">,</span> </span>
-<span id="cb10-289"><a href="" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span>}</span>
-<span id="cb10-290"><a href="" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb10-291"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb10-292"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
-<span id="cb10-293"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">facet</span><span class="op">:</span> {</span>
-<span id="cb10-294"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">data</span><span class="op">:</span> penguins<span class="op">,</span></span>
-<span id="cb10-295"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> <span class="st">"island"</span><span class="op">,</span></span>
-<span id="cb10-296"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">75</span></span>
-<span id="cb10-297"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb10-298"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
-<span id="cb10-299"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb10-300"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">"category10"</span></span>
-<span id="cb10-301"><a href="" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb10-302"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10" data-startfrom="285" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 284;"><span id="cb10-285"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb10-286"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb10-287"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">rectY</span>(</span>
+<span id="cb10-288"><a href="" aria-hidden="true" tabindex="-1"></a>      penguins<span class="op">,</span></span>
+<span id="cb10-289"><a href="" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">binX</span>(</span>
+<span id="cb10-290"><a href="" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">y</span><span class="op">:</span> <span class="st">"count"</span>}<span class="op">,</span> </span>
+<span id="cb10-291"><a href="" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span>}</span>
+<span id="cb10-292"><a href="" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb10-293"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb10-294"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb10-295"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">facet</span><span class="op">:</span> {</span>
+<span id="cb10-296"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">data</span><span class="op">:</span> penguins<span class="op">,</span></span>
+<span id="cb10-297"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> <span class="st">"island"</span><span class="op">,</span></span>
+<span id="cb10-298"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">75</span></span>
+<span id="cb10-299"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb10-300"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
+<span id="cb10-301"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb10-302"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">"category10"</span></span>
+<span id="cb10-303"><a href="" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb10-304"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="histogram" class="cell-output cell-output-display">
 <div id="ojs-cell-8" data-nodetype="expression">
 
@@ -552,26 +552,26 @@ Rencontres R 2025 – Mons
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell" data-ref.label="histogram" data-eval="true">
-<div class="sourceCode cell-code hidden" id="cb11" data-startfrom="311" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 310;"><span id="cb11-311"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb11-312"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb11-313"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">rectY</span>(</span>
-<span id="cb11-314"><a href="" aria-hidden="true" tabindex="-1"></a>      penguins<span class="op">,</span></span>
-<span id="cb11-315"><a href="" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">binX</span>(</span>
-<span id="cb11-316"><a href="" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">y</span><span class="op">:</span> <span class="st">"count"</span>}<span class="op">,</span> </span>
-<span id="cb11-317"><a href="" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span>}</span>
-<span id="cb11-318"><a href="" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb11-319"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb11-320"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
-<span id="cb11-321"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">facet</span><span class="op">:</span> {</span>
-<span id="cb11-322"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">data</span><span class="op">:</span> penguins<span class="op">,</span></span>
-<span id="cb11-323"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> <span class="st">"island"</span><span class="op">,</span></span>
-<span id="cb11-324"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">75</span></span>
-<span id="cb11-325"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb11-326"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
-<span id="cb11-327"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb11-328"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">"category10"</span></span>
-<span id="cb11-329"><a href="" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb11-330"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb11" data-startfrom="313" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 312;"><span id="cb11-313"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb11-314"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb11-315"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">rectY</span>(</span>
+<span id="cb11-316"><a href="" aria-hidden="true" tabindex="-1"></a>      penguins<span class="op">,</span></span>
+<span id="cb11-317"><a href="" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">binX</span>(</span>
+<span id="cb11-318"><a href="" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">y</span><span class="op">:</span> <span class="st">"count"</span>}<span class="op">,</span> </span>
+<span id="cb11-319"><a href="" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">x</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span>}</span>
+<span id="cb11-320"><a href="" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb11-321"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb11-322"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb11-323"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">facet</span><span class="op">:</span> {</span>
+<span id="cb11-324"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">data</span><span class="op">:</span> penguins<span class="op">,</span></span>
+<span id="cb11-325"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> <span class="st">"island"</span><span class="op">,</span></span>
+<span id="cb11-326"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">75</span></span>
+<span id="cb11-327"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb11-328"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
+<span id="cb11-329"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb11-330"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">"category10"</span></span>
+<span id="cb11-331"><a href="" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb11-332"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-9" data-nodetype="expression">
 
@@ -628,7 +628,7 @@ penguins = transpose(t_penguins)
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14" data-startfrom="341" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 340;"><span id="cb14-341"><a href="" aria-hidden="true" tabindex="-1"></a>penguins</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14" data-startfrom="343" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 342;"><span id="cb14-343"><a href="" aria-hidden="true" tabindex="-1"></a>penguins</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-10" data-nodetype="expression">
 
@@ -666,10 +666,10 @@ penguins = transpose(t_penguins)
 <section id="boutons-radio-et-filtre-dégalité" class="slide level2">
 <h2>Boutons radio et filtre d’égalité</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15" data-startfrom="352" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 351;"><span id="cb15-352"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_sp <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(</span>
-<span id="cb15-353"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"Adelie"</span><span class="op">,</span> <span class="st">"Chinstrap"</span><span class="op">,</span> <span class="st">"Gentoo"</span>]<span class="op">,</span> </span>
-<span id="cb15-354"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="st">"Adelie"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;Species&lt;/b&gt;`</span>}</span>
-<span id="cb15-355"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15" data-startfrom="354" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 353;"><span id="cb15-354"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_sp <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(</span>
+<span id="cb15-355"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"Adelie"</span><span class="op">,</span> <span class="st">"Chinstrap"</span><span class="op">,</span> <span class="st">"Gentoo"</span>]<span class="op">,</span> </span>
+<span id="cb15-356"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="st">"Adelie"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;Species&lt;/b&gt;`</span>}</span>
+<span id="cb15-357"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-11" data-nodetype="declaration">
 
@@ -677,7 +677,7 @@ penguins = transpose(t_penguins)
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16" data-startfrom="360" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 359;"><span id="cb16-360"><a href="" aria-hidden="true" tabindex="-1"></a>choice_sp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16" data-startfrom="362" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 361;"><span id="cb16-362"><a href="" aria-hidden="true" tabindex="-1"></a>choice_sp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-12" data-nodetype="expression">
 
@@ -687,7 +687,7 @@ penguins = transpose(t_penguins)
 <div class="fragment">
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17" data-startfrom="368" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 367;"><span id="cb17-368"><a href="" aria-hidden="true" tabindex="-1"></a>penguins<span class="op">.</span><span class="fu">filter</span>((peng) <span class="kw">=&gt;</span> peng<span class="op">.</span><span class="at">species</span> <span class="op">===</span> choice_sp)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17" data-startfrom="370" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 369;"><span id="cb17-370"><a href="" aria-hidden="true" tabindex="-1"></a>penguins<span class="op">.</span><span class="fu">filter</span>((peng) <span class="kw">=&gt;</span> peng<span class="op">.</span><span class="at">species</span> <span class="op">===</span> choice_sp)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-13" data-nodetype="expression">
 
@@ -699,10 +699,10 @@ penguins = transpose(t_penguins)
 <section id="cases-à-cocher-et-filtre-dappartenance" class="slide level2">
 <h2>Cases à cocher et filtre d’appartenance</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18" data-startfrom="375" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 374;"><span id="cb18-375"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_sp2 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(</span>
-<span id="cb18-376"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"Adelie"</span><span class="op">,</span> <span class="st">"Chinstrap"</span><span class="op">,</span> <span class="st">"Gentoo"</span>]<span class="op">,</span> </span>
-<span id="cb18-377"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> [<span class="st">"Adelie"</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;Species&lt;/b&gt;`</span>}</span>
-<span id="cb18-378"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18" data-startfrom="377" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 376;"><span id="cb18-377"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_sp2 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(</span>
+<span id="cb18-378"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"Adelie"</span><span class="op">,</span> <span class="st">"Chinstrap"</span><span class="op">,</span> <span class="st">"Gentoo"</span>]<span class="op">,</span> </span>
+<span id="cb18-379"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> [<span class="st">"Adelie"</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;Species&lt;/b&gt;`</span>}</span>
+<span id="cb18-380"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-14" data-nodetype="declaration">
 
@@ -710,7 +710,7 @@ penguins = transpose(t_penguins)
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19" data-startfrom="383" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 382;"><span id="cb19-383"><a href="" aria-hidden="true" tabindex="-1"></a>choice_sp2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19" data-startfrom="385" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 384;"><span id="cb19-385"><a href="" aria-hidden="true" tabindex="-1"></a>choice_sp2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-15" data-nodetype="expression">
 
@@ -720,7 +720,7 @@ penguins = transpose(t_penguins)
 <div class="fragment">
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20" data-startfrom="391" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 390;"><span id="cb20-391"><a href="" aria-hidden="true" tabindex="-1"></a>penguins<span class="op">.</span><span class="fu">filter</span>((peng) <span class="kw">=&gt;</span> choice_sp2<span class="op">.</span><span class="fu">includes</span>(peng<span class="op">.</span><span class="at">species</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20" data-startfrom="393" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 392;"><span id="cb20-393"><a href="" aria-hidden="true" tabindex="-1"></a>penguins<span class="op">.</span><span class="fu">filter</span>((peng) <span class="kw">=&gt;</span> choice_sp2<span class="op">.</span><span class="fu">includes</span>(peng<span class="op">.</span><span class="at">species</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-16" data-nodetype="expression">
 
@@ -758,10 +758,10 @@ penguins = transpose(t_penguins)
 <section id="les-gadgets" class="slide level2">
 <h2>Les gadgets</h2>
 <div class="cell" data-eval="false">
-<div class="sourceCode cell-code" id="cb21" data-startfrom="402" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 401;"><span id="cb21-402"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_var_x <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(</span>
-<span id="cb21-403"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"bill_len"</span><span class="op">,</span> <span class="st">"bill_dep"</span><span class="op">,</span> <span class="st">"flipper_len"</span><span class="op">,</span> <span class="st">"body_mass"</span>]<span class="op">,</span> </span>
-<span id="cb21-404"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;X&lt;/b&gt;`</span>}</span>
-<span id="cb21-405"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21" data-startfrom="404" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 403;"><span id="cb21-404"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_var_x <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(</span>
+<span id="cb21-405"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"bill_len"</span><span class="op">,</span> <span class="st">"bill_dep"</span><span class="op">,</span> <span class="st">"flipper_len"</span><span class="op">,</span> <span class="st">"body_mass"</span>]<span class="op">,</span> </span>
+<span id="cb21-406"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;X&lt;/b&gt;`</span>}</span>
+<span id="cb21-407"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="choice-var-x" class="cell-output cell-output-display">
 <div id="ojs-cell-17" data-nodetype="declaration">
 
@@ -771,10 +771,10 @@ penguins = transpose(t_penguins)
 <div class="fragment">
 <p><br></p>
 <div class="cell" data-eval="false">
-<div class="sourceCode cell-code" id="cb22" data-startfrom="416" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 415;"><span id="cb22-416"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_var_y <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(</span>
-<span id="cb22-417"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"bill_len"</span><span class="op">,</span> <span class="st">"bill_dep"</span><span class="op">,</span> <span class="st">"flipper_len"</span><span class="op">,</span> <span class="st">"body_mass"</span>]<span class="op">,</span> </span>
-<span id="cb22-418"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;Y&lt;/b&gt;`</span>}</span>
-<span id="cb22-419"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22" data-startfrom="418" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 417;"><span id="cb22-418"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_var_y <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(</span>
+<span id="cb22-419"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"bill_len"</span><span class="op">,</span> <span class="st">"bill_dep"</span><span class="op">,</span> <span class="st">"flipper_len"</span><span class="op">,</span> <span class="st">"body_mass"</span>]<span class="op">,</span> </span>
+<span id="cb22-420"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;Y&lt;/b&gt;`</span>}</span>
+<span id="cb22-421"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="choice-var-y" class="cell-output cell-output-display">
 <div id="ojs-cell-18" data-nodetype="declaration">
 
@@ -785,10 +785,10 @@ penguins = transpose(t_penguins)
 <div class="fragment">
 <p><br></p>
 <div class="cell" data-eval="false">
-<div class="sourceCode cell-code" id="cb23" data-startfrom="430" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 429;"><span id="cb23-430"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_isl <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(</span>
-<span id="cb23-431"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"Biscoe"</span><span class="op">,</span> <span class="st">"Dream"</span><span class="op">,</span> <span class="st">"Torgersen"</span>]<span class="op">,</span> </span>
-<span id="cb23-432"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> [<span class="st">"Biscoe"</span><span class="op">,</span> <span class="st">"Dream"</span><span class="op">,</span> <span class="st">"Torgersen"</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;Island&lt;/b&gt;`</span>}</span>
-<span id="cb23-433"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23" data-startfrom="432" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 431;"><span id="cb23-432"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_isl <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(</span>
+<span id="cb23-433"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"Biscoe"</span><span class="op">,</span> <span class="st">"Dream"</span><span class="op">,</span> <span class="st">"Torgersen"</span>]<span class="op">,</span> </span>
+<span id="cb23-434"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> [<span class="st">"Biscoe"</span><span class="op">,</span> <span class="st">"Dream"</span><span class="op">,</span> <span class="st">"Torgersen"</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;Island&lt;/b&gt;`</span>}</span>
+<span id="cb23-435"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="choice-island" class="cell-output cell-output-display">
 <div id="ojs-cell-19" data-nodetype="declaration">
 
@@ -800,7 +800,7 @@ penguins = transpose(t_penguins)
 <section id="le-graphe" class="slide level2">
 <h2>Le graphe</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24" data-startfrom="441" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 440;"><span id="cb24-441"><a href="" aria-hidden="true" tabindex="-1"></a>penguins_flt <span class="op">=</span> penguins<span class="op">.</span><span class="fu">filter</span>((peng) <span class="kw">=&gt;</span> choice_isl<span class="op">.</span><span class="fu">includes</span>(peng<span class="op">.</span><span class="at">island</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24" data-startfrom="443" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 442;"><span id="cb24-443"><a href="" aria-hidden="true" tabindex="-1"></a>penguins_flt <span class="op">=</span> penguins<span class="op">.</span><span class="fu">filter</span>((peng) <span class="kw">=&gt;</span> choice_isl<span class="op">.</span><span class="fu">includes</span>(peng<span class="op">.</span><span class="at">island</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-20" data-nodetype="declaration">
 
@@ -810,23 +810,23 @@ penguins = transpose(t_penguins)
 <div class="fragment">
 <p><br></p>
 <div class="cell" data-eval="false">
-<div class="sourceCode cell-code" id="cb25" data-startfrom="452" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 451;"><span id="cb25-452"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb25-453"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb25-454"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins_flt<span class="op">,</span> {</span>
-<span id="cb25-455"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> choice_var_x<span class="op">,</span></span>
-<span id="cb25-456"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> choice_var_y<span class="op">,</span></span>
-<span id="cb25-457"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
-<span id="cb25-458"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">symbol</span><span class="op">:</span> <span class="st">"island"</span><span class="op">,</span></span>
-<span id="cb25-459"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb25-460"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb25-461"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
-<span id="cb25-462"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
-<span id="cb25-463"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb25-464"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb25-465"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">symbol</span><span class="op">:</span> {</span>
-<span id="cb25-466"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb25-467"><a href="" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb25-468"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25" data-startfrom="454" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 453;"><span id="cb25-454"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb25-455"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb25-456"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins_flt<span class="op">,</span> {</span>
+<span id="cb25-457"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> choice_var_x<span class="op">,</span></span>
+<span id="cb25-458"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> choice_var_y<span class="op">,</span></span>
+<span id="cb25-459"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
+<span id="cb25-460"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">symbol</span><span class="op">:</span> <span class="st">"island"</span><span class="op">,</span></span>
+<span id="cb25-461"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb25-462"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb25-463"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb25-464"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
+<span id="cb25-465"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb25-466"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb25-467"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">symbol</span><span class="op">:</span> {</span>
+<span id="cb25-468"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb25-469"><a href="" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb25-470"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="boxplot" class="cell-output cell-output-display">
 <div id="ojs-cell-21" data-nodetype="expression">
 
@@ -840,10 +840,10 @@ penguins = transpose(t_penguins)
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell" data-ref.label="choice-var-x" data-eval="true">
-<div class="sourceCode cell-code hidden" id="cb26" data-startfrom="480" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 479;"><span id="cb26-480"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_var_x <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(</span>
-<span id="cb26-481"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"bill_len"</span><span class="op">,</span> <span class="st">"bill_dep"</span><span class="op">,</span> <span class="st">"flipper_len"</span><span class="op">,</span> <span class="st">"body_mass"</span>]<span class="op">,</span> </span>
-<span id="cb26-482"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;X&lt;/b&gt;`</span>}</span>
-<span id="cb26-483"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb26" data-startfrom="482" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 481;"><span id="cb26-482"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_var_x <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(</span>
+<span id="cb26-483"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"bill_len"</span><span class="op">,</span> <span class="st">"bill_dep"</span><span class="op">,</span> <span class="st">"flipper_len"</span><span class="op">,</span> <span class="st">"body_mass"</span>]<span class="op">,</span> </span>
+<span id="cb26-484"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="st">"bill_len"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;X&lt;/b&gt;`</span>}</span>
+<span id="cb26-485"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-22" data-nodetype="declaration">
 
@@ -852,10 +852,10 @@ penguins = transpose(t_penguins)
 </div>
 <p><br></p>
 <div class="cell" data-ref.label="choice-var-y" data-eval="true">
-<div class="sourceCode cell-code hidden" id="cb27" data-startfrom="488" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 487;"><span id="cb27-488"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_var_y <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(</span>
-<span id="cb27-489"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"bill_len"</span><span class="op">,</span> <span class="st">"bill_dep"</span><span class="op">,</span> <span class="st">"flipper_len"</span><span class="op">,</span> <span class="st">"body_mass"</span>]<span class="op">,</span> </span>
-<span id="cb27-490"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;Y&lt;/b&gt;`</span>}</span>
-<span id="cb27-491"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb27" data-startfrom="490" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 489;"><span id="cb27-490"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_var_y <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(</span>
+<span id="cb27-491"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"bill_len"</span><span class="op">,</span> <span class="st">"bill_dep"</span><span class="op">,</span> <span class="st">"flipper_len"</span><span class="op">,</span> <span class="st">"body_mass"</span>]<span class="op">,</span> </span>
+<span id="cb27-492"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="st">"bill_dep"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;Y&lt;/b&gt;`</span>}</span>
+<span id="cb27-493"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-23" data-nodetype="declaration">
 
@@ -864,10 +864,10 @@ penguins = transpose(t_penguins)
 </div>
 <p><br></p>
 <div class="cell" data-ref.label="choice-island" data-eval="true">
-<div class="sourceCode cell-code hidden" id="cb28" data-startfrom="496" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 495;"><span id="cb28-496"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_isl <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(</span>
-<span id="cb28-497"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"Biscoe"</span><span class="op">,</span> <span class="st">"Dream"</span><span class="op">,</span> <span class="st">"Torgersen"</span>]<span class="op">,</span> </span>
-<span id="cb28-498"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> [<span class="st">"Biscoe"</span><span class="op">,</span> <span class="st">"Dream"</span><span class="op">,</span> <span class="st">"Torgersen"</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;Island&lt;/b&gt;`</span>}</span>
-<span id="cb28-499"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb28" data-startfrom="498" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 497;"><span id="cb28-498"><a href="" aria-hidden="true" tabindex="-1"></a>viewof choice_isl <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(</span>
+<span id="cb28-499"><a href="" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"Biscoe"</span><span class="op">,</span> <span class="st">"Dream"</span><span class="op">,</span> <span class="st">"Torgersen"</span>]<span class="op">,</span> </span>
+<span id="cb28-500"><a href="" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> [<span class="st">"Biscoe"</span><span class="op">,</span> <span class="st">"Dream"</span><span class="op">,</span> <span class="st">"Torgersen"</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="fu">html</span><span class="vs">`&lt;b&gt;Island&lt;/b&gt;`</span>}</span>
+<span id="cb28-501"><a href="" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-24" data-nodetype="declaration">
 
@@ -876,23 +876,23 @@ penguins = transpose(t_penguins)
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell" data-ref.label="boxplot" data-eval="true">
-<div class="sourceCode cell-code hidden" id="cb29" data-startfrom="504" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 503;"><span id="cb29-504"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb29-505"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb29-506"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins_flt<span class="op">,</span> {</span>
-<span id="cb29-507"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> choice_var_x<span class="op">,</span></span>
-<span id="cb29-508"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> choice_var_y<span class="op">,</span></span>
-<span id="cb29-509"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
-<span id="cb29-510"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">symbol</span><span class="op">:</span> <span class="st">"island"</span><span class="op">,</span></span>
-<span id="cb29-511"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb29-512"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb29-513"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
-<span id="cb29-514"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
-<span id="cb29-515"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb29-516"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb29-517"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">symbol</span><span class="op">:</span> {</span>
-<span id="cb29-518"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb29-519"><a href="" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb29-520"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb29" data-startfrom="506" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 505;"><span id="cb29-506"><a href="" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb29-507"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb29-508"><a href="" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(penguins_flt<span class="op">,</span> {</span>
+<span id="cb29-509"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> choice_var_x<span class="op">,</span></span>
+<span id="cb29-510"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> choice_var_y<span class="op">,</span></span>
+<span id="cb29-511"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"species"</span><span class="op">,</span></span>
+<span id="cb29-512"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">symbol</span><span class="op">:</span> <span class="st">"island"</span><span class="op">,</span></span>
+<span id="cb29-513"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb29-514"><a href="" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb29-515"><a href="" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb29-516"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
+<span id="cb29-517"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb29-518"><a href="" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb29-519"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="dt">symbol</span><span class="op">:</span> {</span>
+<span id="cb29-520"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb29-521"><a href="" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb29-522"><a href="" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-25" data-nodetype="expression">
 

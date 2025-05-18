@@ -6,3 +6,6 @@
 .Rdata
 .httr-oauth
 .quarto
+index.html
+index_files/
+README.html
